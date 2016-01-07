@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0",
+  "name": "Firefox OS Home Screen Template",
+  "description": "A home screen template for Firefox OS with the bare minimum structure",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/icons/16.png",
+    "32": "/icons/32.png",
+    "48": "/icons/48.png",
+    "60": "/icons/60.png",
+    "128": "/icons/128.png",
+    "512": "/icons/512.png"
+  },
+  "developer": {
+    "name": "The Gaia Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "type": "privileged",
+  "role": "homescreen",
+  "orientation": "default",
+  "permissions": {
+    "homescreen-webapps-manage": {
+      "description": "Manage web apps."
+    },
+    "systemXHR": {
+      "description": "Get icons from other domains."
+    }
+  },
+  "datastores-access": {
+    "bookmarks_store": {
+      "readonly": true,
+      "description": "View pinned sites."
+    },
+    "places": {
+      "readonly": false,
+      "description": "View and modify pinned pages."
+    }
+  },
+  "locales": {},
+  "default_locale": "en"
+}
